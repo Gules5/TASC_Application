@@ -8,3 +8,11 @@ between the nodes can be seen in "rqt_graph.png" which is an rqt graph.
 
 In a robotics system the robot would be publishing its location data so that other components of the system can know where the robot is at any given time. The main use
 of this would be in navigation. The robot must know its current position in order for it to know where it needs to go and how it should move to get there.
+
+
+To build the project: 
+colcon build --symlink-install
+
+To run the publisher and subscriber nodes respectively:
+ros2 run tasc_application coord_publisher
+ros2 run tasc_application coord_subscriber
